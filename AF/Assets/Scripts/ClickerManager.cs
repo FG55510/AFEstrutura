@@ -61,9 +61,6 @@ public class ClickerManager : MonoBehaviour
                         OnClickEnviroment.Invoke(args);
                         break;
 
-                    case "Portal":
-                        GameManager.INSTANCE.ProximaFase();
-                        break;
                 }
             }
         }
