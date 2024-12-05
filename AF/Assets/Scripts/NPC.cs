@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class NPC : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
     public float startSpeed = 1;
     
     public List<GameObject> points;
@@ -72,6 +72,8 @@ public class NPC : MonoBehaviour
     private void KillPlayer()
     {
         animator.SetTrigger("Attack");
+        Player playerparamorte = player.GetComponent<Player>();
+        playerparamorte.Playerdeath();
         
     }
 
